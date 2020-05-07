@@ -5,14 +5,15 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
 import java.io.File;
 import java.io.IOException;
 
 public class Launcher extends Application {
 	final static private String MAIN_FXML = "src/main/resources/MainView.fxml";
 
-	public static void main(String[] args){
+	public static void main(String[] args) throws Exception{
+		if (true) {
+		}
 		launch();
 	}
 
