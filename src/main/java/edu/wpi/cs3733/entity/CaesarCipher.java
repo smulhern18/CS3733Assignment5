@@ -10,9 +10,12 @@ public class CaesarCipher implements Observer {
 
 	public void setText(String text){
 	String incoding ="";
-	char[] toCipher = text.substring(0,140).toCharArray();
+		char[] toCipher;
+		if(text.length() >140) {
+		toCipher= text.substring(0, 140).toCharArray();
+	}else  toCipher = text.toCharArray();
 
-	for(char t: toCipher){
+		for(char t: toCipher){
 		switch(t) {
 			case ('a'):
 				incoding +="z";
