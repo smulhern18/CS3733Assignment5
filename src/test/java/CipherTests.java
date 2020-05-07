@@ -1,3 +1,4 @@
+import edu.wpi.cs3733.entity.CaesarCipher;
 import edu.wpi.cs3733.entity.ElbonianCipher;
 import org.junit.Test;
 import static org.junit.Assert.assertTrue;
@@ -8,7 +9,7 @@ import static org.junit.Assert.assertTrue;
  */
 public class CipherTests {
     ElbonianCipher elbonianCipher = new ElbonianCipher();
-
+    CaesarCipher caesarCipher = new CaesarCipher();
     @Test
     public void testWithoutNumbers() {
         elbonianCipher.setText("Hello");
@@ -37,5 +38,23 @@ public class CipherTests {
     public void testEdge() {
         elbonianCipher.setText("HelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHello");
         assertTrue(elbonianCipher.getText().equals("0805121215080512121508051212150805121215080512121508051212150805121215080512121508051212150805121215080512121508051212150805121215080512121508051212150805121215080512121508051212150805121215080512121508051212150805121215080512121508051212150805121215080512121508051212150805121215"));
+    }
+
+    @Test
+    public void testLowerCase() {
+        caesarCipher.setText("abcdef");
+        assertTrue(caesarCipher.getText().equals("zyxwvu"));
+    }
+
+    @Test
+    public void testUpperCase() {
+        caesarCipher.setText("ABCDEF");
+        assertTrue(caesarCipher.getText().equals("ZYXWVU"));
+    }
+
+    @Test
+    public void testwithNONLetters() {
+        caesarCipher.setText("Ab1a k");
+        assertTrue(caesarCipher.getText().equals("Zy1z p"));
     }
 }
