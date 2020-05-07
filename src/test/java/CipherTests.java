@@ -1,6 +1,5 @@
 import edu.wpi.cs3733.entity.ElbonianCipher;
 import org.junit.Test;
-
 import static org.junit.Assert.assertTrue;
 
 /**
@@ -26,5 +25,17 @@ public class CipherTests {
     public void withNumbers() {
         elbonianCipher.setText("123456789");
         assertTrue(elbonianCipher.getText().equals("abcdefghi"));
+    }
+
+    @Test
+    public void numbersAndLetters() {
+        elbonianCipher.setText("H3llo");
+        assertTrue(elbonianCipher.getText().equals("08c121215"));
+    }
+
+    @Test
+    public void testEdge() {
+        elbonianCipher.setText("HelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHello");
+        assertTrue(elbonianCipher.getText().equals("0805121215080512121508051212150805121215080512121508051212150805121215080512121508051212150805121215080512121508051212150805121215080512121508051212150805121215080512121508051212150805121215080512121508051212150805121215080512121508051212150805121215080512121508051212150805121215"));
     }
 }

@@ -8,7 +8,10 @@ public class ElbonianCipher implements Observer {
 	private String cypherText = "";
 
 	public void setText(String text){
-		char[] charString = text.substring(0, 140).toCharArray();
+		if (text.length() > 140){
+			text = text.substring(0, 140);
+		}
+		char[] charString = text.toCharArray();
 		String elbonianCypher = "";
 		int i = 0;
 		while(i < charString.length){
