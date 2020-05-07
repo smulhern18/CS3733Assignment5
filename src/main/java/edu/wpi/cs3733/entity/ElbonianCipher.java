@@ -155,6 +155,9 @@ public class ElbonianCipher implements Observer {
 			case ('9'):
 				returnMe = "i";
 				break;
+			case ('0'):
+				returnMe = "_";
+				break;
 			case (' '):
 				returnMe = "S";
 				break;

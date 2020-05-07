@@ -24,8 +24,8 @@ public class CipherTests {
 
     @Test
     public void withNumbers() {
-        elbonianCipher.setText("123456789");
-        assertTrue(elbonianCipher.getText().equals("abcdefghi"));
+        elbonianCipher.setText("1234567890");
+        assertTrue(elbonianCipher.getText().equals("abcdefghi_"));
     }
 
     @Test
