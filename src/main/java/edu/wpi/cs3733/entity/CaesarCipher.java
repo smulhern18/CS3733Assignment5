@@ -189,4 +189,5 @@ public class CaesarCipher implements Observer {
 	public void notify(Object object){
 
 	}
+
 }
