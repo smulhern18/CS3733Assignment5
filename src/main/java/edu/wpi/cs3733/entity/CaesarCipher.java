@@ -182,7 +182,7 @@ public class CaesarCipher implements Observer {
 		this.string = string;
 	}
 	public String getText(){
-		return null;
+		return this.string;
 	}
 
 	@Override
