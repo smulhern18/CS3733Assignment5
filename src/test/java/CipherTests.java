@@ -41,6 +41,11 @@ public class CipherTests {
     }
 
     @Test
+    public void testPuntuation() {
+
+    }
+
+    @Test
     public void testLowerCase() {
         caesarCipher.setText("abcdef");
         assertTrue(caesarCipher.getText().equals("zyxwvu"));

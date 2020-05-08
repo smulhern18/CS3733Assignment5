@@ -1,5 +1,8 @@
 package edu.wpi.cs3733.entity;
 
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
+
 /**
  * Implement this interface for any class that you wish to be registered as an observer of another object
  */

@@ -161,6 +161,18 @@ public class ElbonianCipher implements Observer {
 			case (' '):
 				returnMe = "S";
 				break;
+			case ('!'):
+				returnMe = "!";
+				break;
+			case ('.'):
+				returnMe = ".";
+				break;
+			case (','):
+				returnMe = ",";
+				break;
+			case ('?'):
+				returnMe = "?";
+				break;
 			default:
 				returnMe = "We done fucked up";
 				break;
