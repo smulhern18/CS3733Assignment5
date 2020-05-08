@@ -34,6 +34,7 @@ public class CaesarCipher implements Observer {
 		}
 
 	public String caesarCip(char[] string) {
+		boolean isIncorrect = false;
 		String incoding = "";
 		for (char t : string) {
 			switch (t) {
@@ -193,16 +194,38 @@ public class CaesarCipher implements Observer {
 				case ('Z'):
 					incoding += "A";
 					break;
+				case('.'):
+					incoding += ".";
+					break;
+				case(','):
+					incoding += ",";
+					break;
+				case('?'):
+					incoding += "?";
+					break;
+				case('!'):
+					incoding += "!";
+					break;
+				case(' '):
+					incoding += " ";
+					break;
 				default:
-					incoding += t;
+					isIncorrect = true;
 					break;
 			}
 		}
-		return incoding;
+		if(isIncorrect){
+			return "";
+		}else {
+			return incoding;
+		}
 	}
 	public CaesarCipher(TextArea label){
 		this.label = label;
 	}
+
+	public CaesarCipher(){}
+
 
 	public void setString(String string){
 		this.string = string;
