@@ -12,8 +12,6 @@ public class Launcher extends Application {
 	final static private String MAIN_FXML = "src/main/resources/MainView.fxml";
 
 	public static void main(String[] args) throws Exception{
-		if (true) {
-		}
 		launch();
 	}
 

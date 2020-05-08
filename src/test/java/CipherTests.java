@@ -1,5 +1,6 @@
 import edu.wpi.cs3733.entity.CaesarCipher;
 import edu.wpi.cs3733.entity.ElbonianCipher;
+import javafx.scene.control.TextArea;
 import org.junit.Test;
 import static org.junit.Assert.assertTrue;
 
@@ -8,8 +9,9 @@ import static org.junit.Assert.assertTrue;
  * Test-driven development is a good idea here.
  */
 public class CipherTests {
-    ElbonianCipher elbonianCipher = new ElbonianCipher();
-    CaesarCipher caesarCipher = new CaesarCipher();
+    TextArea textArea = new TextArea();
+    ElbonianCipher elbonianCipher = new ElbonianCipher(textArea);
+    CaesarCipher caesarCipher = new CaesarCipher(textArea);
     @Test
     public void testWithoutNumbers() {
         elbonianCipher.setText("Hello");

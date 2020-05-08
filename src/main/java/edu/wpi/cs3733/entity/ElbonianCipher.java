@@ -1,11 +1,14 @@
 package edu.wpi.cs3733.entity;
 
+import javafx.scene.control.TextArea;
+
 /**
  * Elbonian cipher; you must implement the cipher and the observer pattern
  */
 public class ElbonianCipher implements Observer {
 
 	private String cypherText = "";
+	private TextArea label;
 
 	public void setText(String text){
 		if (text.length() > 140){
@@ -174,10 +177,14 @@ public class ElbonianCipher implements Observer {
 				returnMe = "?";
 				break;
 			default:
-				returnMe = "We done fucked up";
+				returnMe = "";
 				break;
 		}
 		return returnMe;
+	}
+
+	public ElbonianCipher(TextArea label){
+		this.label = label;
 	}
 
 	public String getText(){
@@ -186,6 +193,8 @@ public class ElbonianCipher implements Observer {
 
 	@Override
 	public void notify(Object object){
-
+		String objectString = (String) object;
+		setText(objectString);
+		label.setText(cypherText);
 	}
 }

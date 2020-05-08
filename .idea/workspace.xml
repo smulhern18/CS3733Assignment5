@@ -3,12 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="5a594c2e-5ce1-44e8-adf7-97bce5edb525" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/MainView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/MainView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/edu/wpi/cs3733/CipherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/edu/wpi/cs3733/CipherController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/edu/wpi/cs3733/Launcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/edu/wpi/cs3733/Launcher.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/main/edu/wpi/cs3733/entity/CaesarCipher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/edu/wpi/cs3733/entity/CaesarCipher.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/main/edu/wpi/cs3733/entity/ElbonianCipher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/edu/wpi/cs3733/entity/ElbonianCipher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/edu/wpi/cs3733/entity/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/edu/wpi/cs3733/entity/Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/edu/wpi/cs3733/entity/Observer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/edu/wpi/cs3733/entity/Observer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/test/CipherTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/test/CipherTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/wpi/cs3733/CipherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/wpi/cs3733/CipherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/wpi/cs3733/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/wpi/cs3733/Launcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/wpi/cs3733/entity/CaesarCipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/wpi/cs3733/entity/CaesarCipher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/wpi/cs3733/entity/ElbonianCipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/wpi/cs3733/entity/ElbonianCipher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/wpi/cs3733/entity/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/wpi/cs3733/entity/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/wpi/cs3733/entity/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/wpi/cs3733/entity/Observer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/MainView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/MainView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CipherTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CipherTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/test.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +53,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
-  <component name="RunManager" selected="JUnit.CipherTests">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -336,6 +346,7 @@
       <workItem from="1548994590212" duration="369000" />
       <workItem from="1548995112765" duration="24000" />
       <workItem from="1588625250825" duration="291000" />
+      <workItem from="1588958602450" duration="1811000" />
     </task>
     <servers />
   </component>
@@ -343,22 +354,53 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="819" height="251" key="GridCell.Tab.0.bottom" timestamp="1588879088414">
+    <state x="996" y="234" key="#com.intellij.ide.util.MemberChooser" timestamp="1588955785212">
       <screen x="0" y="23" width="1680" height="1002" />
     </state>
-    <state width="819" height="251" key="GridCell.Tab.0.bottom/0.23.1680.1002@0.23.1680.1002" timestamp="1588879088414" />
-    <state width="819" height="251" key="GridCell.Tab.0.center" timestamp="1588879088413">
+    <state x="996" y="234" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1002@0.23.1680.1002" timestamp="1588955785212" />
+    <state width="1638" height="253" key="GridCell.Tab.0.bottom" timestamp="1588960575078">
       <screen x="0" y="23" width="1680" height="1002" />
     </state>
-    <state width="819" height="251" key="GridCell.Tab.0.center/0.23.1680.1002@0.23.1680.1002" timestamp="1588879088413" />
-    <state width="819" height="251" key="GridCell.Tab.0.left" timestamp="1588879088413">
+    <state width="1638" height="253" key="GridCell.Tab.0.bottom/0.23.1680.1002@0.23.1680.1002" timestamp="1588960575078" />
+    <state width="1638" height="253" key="GridCell.Tab.0.center" timestamp="1588960575078">
       <screen x="0" y="23" width="1680" height="1002" />
     </state>
-    <state width="819" height="251" key="GridCell.Tab.0.left/0.23.1680.1002@0.23.1680.1002" timestamp="1588879088413" />
-    <state width="819" height="251" key="GridCell.Tab.0.right" timestamp="1588879088414">
+    <state width="1638" height="253" key="GridCell.Tab.0.center/0.23.1680.1002@0.23.1680.1002" timestamp="1588960575078" />
+    <state width="1638" height="253" key="GridCell.Tab.0.left" timestamp="1588960575077">
       <screen x="0" y="23" width="1680" height="1002" />
     </state>
-    <state width="819" height="251" key="GridCell.Tab.0.right/0.23.1680.1002@0.23.1680.1002" timestamp="1588879088414" />
+    <state width="1638" height="253" key="GridCell.Tab.0.left/0.23.1680.1002@0.23.1680.1002" timestamp="1588960575077" />
+    <state width="1638" height="253" key="GridCell.Tab.0.right" timestamp="1588960575078">
+      <screen x="0" y="23" width="1680" height="1002" />
+    </state>
+    <state width="1638" height="253" key="GridCell.Tab.0.right/0.23.1680.1002@0.23.1680.1002" timestamp="1588960575078" />
+    <state width="808" height="316" key="GridCell.Tab.1.bottom" timestamp="1588960331443">
+      <screen x="0" y="23" width="1680" height="1002" />
+    </state>
+    <state width="808" height="316" key="GridCell.Tab.1.bottom/0.23.1680.1002@0.23.1680.1002" timestamp="1588960331443" />
+    <state width="808" height="316" key="GridCell.Tab.1.center" timestamp="1588960331443">
+      <screen x="0" y="23" width="1680" height="1002" />
+    </state>
+    <state width="808" height="316" key="GridCell.Tab.1.center/0.23.1680.1002@0.23.1680.1002" timestamp="1588960331443" />
+    <state width="808" height="316" key="GridCell.Tab.1.left" timestamp="1588960331443">
+      <screen x="0" y="23" width="1680" height="1002" />
+    </state>
+    <state width="808" height="316" key="GridCell.Tab.1.left/0.23.1680.1002@0.23.1680.1002" timestamp="1588960331443" />
+    <state width="808" height="316" key="GridCell.Tab.1.right" timestamp="1588960331443">
+      <screen x="0" y="23" width="1680" height="1002" />
+    </state>
+    <state width="808" height="316" key="GridCell.Tab.1.right/0.23.1680.1002@0.23.1680.1002" timestamp="1588960331443" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/wpi/cs3733/CipherController.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

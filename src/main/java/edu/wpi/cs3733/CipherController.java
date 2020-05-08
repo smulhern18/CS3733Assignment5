@@ -27,12 +27,9 @@ public class CipherController implements Initializable {
 	private Message cleartext;
 	private CaesarCipher caesarCipher;
 	private ElbonianCipher elbonianCipher;
-	private Subject subject = new Subject();
 
 	public CipherController(){
 		cleartext = new Message();
-		caesarCipher = new CaesarCipher();
-		elbonianCipher = new ElbonianCipher();
 		/*
 		 * You may add additional code here if it relates to your observer pattern implementation.
 		 */
@@ -41,23 +38,27 @@ public class CipherController implements Initializable {
 
 	@Override
 	public void initialize(URL url, ResourceBundle resourceBundle) {
-		caesarTextOut.textProperty().bind(Bindings.createStringBinding(
-				() -> {caesarCipher.setText(subject.getState().get());
-					return caesarCipher.getText();
-				}, subject.getState()
-		));
-
-		elbonianTextOut.textProperty().bind(Bindings.createStringBinding(
-				() -> {elbonianCipher.setText(subject.getState().get());
-					return elbonianCipher.getText();},
-				subject.getState()
-		));
+//		caesarTextOut.textProperty().bind(Bindings.createStringBinding(
+//				() -> {caesarCipher.setText(subject.getState().get());
+//					return caesarCipher.getText();
+//				}, subject.getState()
+//		));
+//
+//		elbonianTextOut.textProperty().bind(Bindings.createStringBinding(
+//				() -> {elbonianCipher.setText(subject.getState().get());
+//					return elbonianCipher.getText();},
+//				subject.getState()
+//		));
+		caesarCipher = new CaesarCipher(caesarTextOut);
+		elbonianCipher = new ElbonianCipher(elbonianTextOut);
+		cleartext.register(caesarCipher);
+		cleartext.register(elbonianCipher);
 
 		textInputBox.textProperty().addListener((observable, ol, ne) -> {
 			if (ne.isBlank()) {
-				subject.setState("");
+				cleartext.setText("");
 			} else {
-				subject.setState(ne);
+				cleartext.setText(ne);
 			}
 		});
 	}
