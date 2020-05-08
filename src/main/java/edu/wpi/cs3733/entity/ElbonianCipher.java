@@ -191,6 +191,10 @@ public class ElbonianCipher implements Observer {
 		this.label = label;
 	}
 
+	public ElbonianCipher(){
+
+	}
+
 	public String getText(){
 		return cypherText;
 	}

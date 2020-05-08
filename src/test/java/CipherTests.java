@@ -9,9 +9,8 @@ import static org.junit.Assert.assertTrue;
  * Test-driven development is a good idea here.
  */
 public class CipherTests {
-    TextArea textArea = new TextArea();
-    ElbonianCipher elbonianCipher = new ElbonianCipher(textArea);
-    CaesarCipher caesarCipher = new CaesarCipher(textArea);
+    ElbonianCipher elbonianCipher = new ElbonianCipher();
+    CaesarCipher caesarCipher = new CaesarCipher();
     @Test
     public void testWithoutNumbers() {
         elbonianCipher.setText("Hello");
@@ -44,7 +43,8 @@ public class CipherTests {
 
     @Test
     public void testPuntuation() {
-
+        elbonianCipher.setText("?.");
+        assertTrue(elbonianCipher.getText().equals("?."));
     }
 
     @Test
@@ -61,7 +61,7 @@ public class CipherTests {
 
     @Test
     public void testwithNONLetters() {
-        caesarCipher.setText("Ab1a k");
-        assertTrue(caesarCipher.getText().equals("Zy1z p"));
+        caesarCipher.setText("Ab.a k");
+        assertTrue(caesarCipher.getText().equals("Zy.z p"));
     }
 }
