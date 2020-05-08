@@ -17,15 +17,20 @@ public class ElbonianCipher implements Observer {
 		char[] charString = text.toCharArray();
 		String elbonianCypher = "";
 		int i = 0;
-		while(i < charString.length){
-			elbonianCypher += toElbonian(charString[i]);
-			i ++;
+
+		try {
+			while(i < charString.length){
+				elbonianCypher += toElbonian(charString[i]);
+				i ++;
+			}
+		} catch (IllegalArgumentException e){
+			elbonianCypher = "";
 		}
 		this.cypherText = elbonianCypher;
 	}
 
-	public String toElbonian(char c){
-		String returnMe = "";
+	public String toElbonian(char c) throws IllegalArgumentException{
+		String returnMe;
 		switch (c) {
 			case ('a'):
 			case ('A'):
@@ -177,8 +182,7 @@ public class ElbonianCipher implements Observer {
 				returnMe = "?";
 				break;
 			default:
-				returnMe = "";
-				break;
+				throw new IllegalArgumentException("Character cannot be translated");
 		}
 		return returnMe;
 	}
